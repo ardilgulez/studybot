@@ -54,7 +54,7 @@ export class ClientHandler {
         if (
             message.channel.name === "random-channel" &&
             message.content ===
-                "Deneme tahtasi yapmaya gerek yok, sonuna kadar Recep Tayyip Erdogan"
+                "Deneme tahtasi yapmaya gerek yok, sonuna kadar malum sahis"
         )
             message.reply("Siktir orospu afedersin").then((m: Message) => {
                 setTimeout(() => {
