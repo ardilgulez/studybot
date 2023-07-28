@@ -1,4 +1,7 @@
 {
+    "ts-node": {
+        "files": true
+    },
     "compilerOptions": {
         "target": "ES5",
         "module": "commonjs",
@@ -16,9 +19,10 @@
         "removeComments": true,
         "typeRoots": ["node_modules/@types"],
         "sourceMap": false,
-        "baseUrl": "./"
+        "baseUrl": "./",
+        "skipDefaultLibCheck": false
     },
-    "files": ["src/bot.ts"],
+    "files": ["src/bot.ts", "./types.d.ts"],
     "include": ["./**/*.ts"],
     "exclude": ["node_modules", "dist"]
 }

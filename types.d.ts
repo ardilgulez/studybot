@@ -1,9 +1,9 @@
-export type Quote = {
+type Quote = {
     id: number;
     quote: string;
     author: string;
 };
 
-export type QuoteResponse = {
+type QuoteResponse = {
     quotes: Quote[];
 };

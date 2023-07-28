@@ -1,5 +1,4 @@
 import axios, { AxiosResponse } from "axios";
-import { Quote, QuoteResponse } from "./types";
 
 export const getRandomQuote: () => Quote | Promise<Quote> = async () => {
     const quoteNumber = Math.floor(Math.random() * 99);

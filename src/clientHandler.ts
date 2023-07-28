@@ -49,7 +49,6 @@ export class ClientHandler {
     };
 
     private clientMessageCreateHandler = (message: Message) => {
-        console.log(`${message.author.tag} says ${message.content}`);
         if (message.author.bot) return;
         if (!(message.channel instanceof TextChannel)) return;
         if (
@@ -59,7 +58,7 @@ export class ClientHandler {
         )
             message.reply("Siktir orospu afedersin").then((m: Message) => {
                 setTimeout(() => {
-                    m.edit("iyi dedim bosver");
+                    m.reply("iyi dedim bosver");
                 }, 5000);
             });
     };
